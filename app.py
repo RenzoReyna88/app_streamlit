@@ -13,7 +13,7 @@ def pagina_inicio():
     st.title('Cálculo de Cash Flow Automático')
 
     # Subir archivo Excel
-    archivo_subido = st.file_uploader("Sube tu archivo Excel", type=["xlsx"])
+    archivo_subido = st.file_uploader("NOTA: El archivo Excel debe contener al menos tres columnas con los nombres (fecha, ingresos y egresos) para realizar la operación.", type=["xlsx"])
 
     if archivo_subido is not None:
         # Leer el archivo Excel
