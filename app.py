@@ -58,12 +58,23 @@ def pagina_inicio():
                 # Mostrar el gráfico
                 st.plotly_chart(fig)
 
-                st.write("Listo!! Ya tienes tu Cash Flow Calculado. Ahora puedes hacer lo que desees. Puedes descargar la información e interactuar con ella solo desde aquí si prefieres.")
+                st.write("Listo!! Ya tienes tu Cash Flow Calculado. Ahora puedes hacer lo que desees. Puedes interactuar en esta pantalla y tambien descargar la información si es necesario.")
 
             except Exception as e:
                 st.error(f"Error al procesar los datos: {e}")
     else:
         st.write("Sube un archivo Excel para comenzar.")
+
+    st.divider()
+
+    st.text(' © Creado por Renzo Reyna (Desarrollador Sarmientino) - Analista de Datos / Desarrollador Python')
+
+    st.text('Contacto:')
+    st.text('Teléfono: + 54 3525 - 620842')
+    st.text('Correo electrónico: desarrollador.sarmientino@gmail.com')
+    st.text('Domicilio: Localidad de Sarmiento, Departamento Totoral, Provincia de Córdoba, Argentina')
+
+
 
 
 if __name__ == '__main__':
